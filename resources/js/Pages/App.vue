@@ -7,20 +7,7 @@
             <small class="text-muted">A simple app to roll dice.</small>
         </div>
         <div class="row justify-content-center">
-                <dice-bar class="col-5" @roll="recordRoll" @mod="recordMod"/>
-                <!--            <div class="col-3 border">-->
-                <!--                <select>-->
-                <!--                    <option>2-sided</option>-->
-                <!--                    <option>4-sided</option>-->
-                <!--                    <option>6-sided</option>-->
-                <!--                    <option>8-sided</option>-->
-                <!--                    <option>10-sided</option>-->
-                <!--                    <option>12-sided</option>-->
-                <!--                    <option>20-sided</option>-->
-                <!--                    <option>50-sided</option>-->
-                <!--                    <option>100-sided</option>-->
-                <!--                </select>-->
-                <!--            </div>-->
+            <dice-bar class="col-5" @roll="recordRoll" @mod="recordMod"/>
         </div>
         <div class="row justify-content-center">
             <roll-log class="col-5" :rolls="rolls" :mod="mod" @clear="clearRolls"/>
