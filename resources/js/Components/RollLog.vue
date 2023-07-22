@@ -1,5 +1,5 @@
 <template>
-    <div class="border rounded m-2" style="background-color:ghostwhite;">
+    <div class="border rounded m-2" style="background-color:#424549;">
         <div class="d-flex py-2" :class="history.length > 0 ? 'border-bottom' : null" style="flex-direction: row">
             <div class="mt-2">
                 <div class="total title" style="white-space: nowrap; min-width: 5em">

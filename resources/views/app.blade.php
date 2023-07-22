@@ -19,7 +19,7 @@
 
 
     </head>
-    <body class="font-sans antialiased" style="background-color:#F5F5F5;">
+    <body class="font-sans antialiased" style="background-color:#282b30;">
         @inertia
     </body>
 </html>

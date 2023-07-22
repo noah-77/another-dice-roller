@@ -1,22 +1,22 @@
 <template>
     <div class="m-1 px-3 pt-4 pb-2">
         <!-- add a global toggler here for d6 representation vs -sided representation -->
-<!--        https://thenounproject.com/icon/icosahedron-407537/-->
-<!--        https://tacticaltokens.com/dice-roller/-->
+        <!--        https://thenounproject.com/icon/icosahedron-407537/-->
+        <!--        https://tacticaltokens.com/dice-roller/-->
         <div class="d-flex justify-content-around flex-wrap">
-            <button v-for="types in dice_types" :key="types.value" class="btn btn-primary mb-1"
+            <button v-for="types in dice_types" :key="types.value" class="btn btn-primary mb-1" style="color:#7289da"
                     @click.prevent="rollDice(types.value)">
-                <span class="mr-1">{{ 'd' + types.value }}</span>
+                <span class="mr-1 text-white">{{ 'd' + types.value }}</span>
             </button>
-<!--            <input type="number" class="form-control" style="max-width: 5em" v-model="mod" min="-100000" max="100000">&ndash;&gt;-->
+            <!--            <input type="number" class="form-control" style="max-width: 5em" v-model="mod" min="-100000" max="100000">&ndash;&gt;-->
         </div>
-<!--        <div class="d-flex justify-content-end align-items-center mt-2">-->
-<!--            &lt;!&ndash;            <button class="btn btn-secondary" @click.prevent="modifier(mod)">Modifier</button>&ndash;&gt;-->
-<!--            <div>-->
-<!--                Modifier:-->
-<!--            </div>-->
-<!--            <input type="number" class="form-control" style="max-width: 5em" v-model="mod" min="-100000" max="100000">-->
-<!--        </div>-->
+        <!--        <div class="d-flex justify-content-end align-items-center mt-2">-->
+        <!--            &lt;!&ndash;            <button class="btn btn-secondary" @click.prevent="modifier(mod)">Modifier</button>&ndash;&gt;-->
+        <!--            <div>-->
+        <!--                Modifier:-->
+        <!--            </div>-->
+        <!--            <input type="number" class="form-control" style="max-width: 5em" v-model="mod" min="-100000" max="100000">-->
+        <!--        </div>-->
     </div>
 </template>
 
